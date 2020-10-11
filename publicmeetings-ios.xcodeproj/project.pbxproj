@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,6 +39,7 @@
 		E56077AB235C9AEB003D8F26 /* StandardValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56077AA235C9AEB003D8F26 /* StandardValues.swift */; };
 		E56A792F2361E126001376EC /* AgendasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A792E2361E126001376EC /* AgendasViewController.swift */; };
 		E56A79312361E137001376EC /* AgendasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A79302361E137001376EC /* AgendasCell.swift */; };
+		E56EA7DE2532FDC5002F10C9 /* Valet in Frameworks */ = {isa = PBXBuildFile; productRef = E56EA7DD2532FDC5002F10C9 /* Valet */; };
 		E5F0305C23631EC400F65234 /* NoMeetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0305B23631EC400F65234 /* NoMeetingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56EA7DE2532FDC5002F10C9 /* Valet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +293,9 @@
 			dependencies = (
 			);
 			name = "publicmeetings-ios";
+			packageProductDependencies = (
+				E56EA7DD2532FDC5002F10C9 /* Valet */,
+			);
 			productName = "publicmeetings-ios";
 			productReference = E54DA369234431E60070241F /* Public Meetings.app */;
 			productType = "com.apple.product-type.application";
@@ -363,6 +368,9 @@
 				Base,
 			);
 			mainGroup = E54DA360234431E60070241F;
+			packageReferences = (
+				E56EA7DC2532FDC5002F10C9 /* XCRemoteSwiftPackageReference "Valet" */,
+			);
 			productRefGroup = E54DA36A234431E60070241F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -754,6 +762,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E56EA7DC2532FDC5002F10C9 /* XCRemoteSwiftPackageReference "Valet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Square/Valet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E56EA7DD2532FDC5002F10C9 /* Valet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E56EA7DC2532FDC5002F10C9 /* XCRemoteSwiftPackageReference "Valet" */;
+			productName = Valet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E54DA361234431E60070241F /* Project object */;
 }
